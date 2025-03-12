@@ -3,9 +3,12 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="" />
+        <meta
+            name="description"
+            content="Projects by an Mechatronic Engineer specializing in AI, machine learning, and mechatronics."
+        />
         <meta name="author" content="Sergey Pozhilov (GetTemplate.com)" />
-        <title>Projects | AI Mechatronic Engineer</title>
+        <title>Projects | Tom Jojo Palamattam</title>
         <link rel="shortcut icon" href="assets/images/gt_favicon.png" />
         <!-- Bootstrap -->
         <link
@@ -24,6 +27,11 @@
         />
         <!-- Custom styles -->
         <link rel="stylesheet" href="assets/css/styles.css" />
+        <!-- Lightbox for images -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+        />
         <!--[if lt IE 9]>
             <script src="assets/js/html5shiv.js"></script>
         <![endif]-->
@@ -32,11 +40,11 @@
         <header id="header">
             <div id="head" class="parallax" parallax-speed="1">
                 <h1 id="logo" class="text-center">
-                    <span class="title">AI Mechatronic Engineer</span>
+                    <span class="title">Tom Jojo Palamattam</span>
                     <span class="tagline"
                         >Master of Science in Mechatronics & Cyberphysical
                         Systems<br />
-                        <a href="">engineer@example.com</a></span
+                        <a href="">tomjojopalamattam@gmail.com</a></span
                     >
                 </h1>
             </div>
@@ -80,212 +88,1860 @@
                             <h1 class="page-title">My Projects</h1>
                         </header>
 
-                        <!-- Project 1: YOLOv3 for Object Detection -->
-                        <section id="yolov3">
-                            <h2>YOLOv3 for Object Detection</h2>
-                            <p>
-                                <img
-                                    src="assets/images/s1.png"
-                                    alt="YOLOv3 Object Detection"
-                                />
-                            </p>
-                            <p>
-                                This project involved developing a real-time
-                                object detection system using YOLOv3 (You Only
-                                Look Once). The system is capable of detecting
-                                and classifying objects in real-time video
-                                streams with high accuracy and speed. It was
-                                implemented using Python and TensorFlow, and the
-                                model was trained on the COCO dataset.
-                            </p>
-                            <h3>Key Features</h3>
-                            <ul>
-                                <li>
-                                    Real-time object detection with high
-                                    accuracy.
-                                </li>
-                                <li>
-                                    Supports multiple object classes (80 classes
-                                    from the COCO dataset).
-                                </li>
-                                <li>
-                                    Optimized for deployment on edge devices
-                                    using TensorFlow Lite.
-                                </li>
-                                <li>
-                                    Integration with ROS (Robot Operating
-                                    System) for robotic applications.
-                                </li>
-                            </ul>
-                            <h3>Technologies Used</h3>
-                            <p>
-                                Python, TensorFlow, OpenCV, ROS, COCO Dataset.
-                            </p>
-                            <blockquote>
-                                "The YOLOv3 model achieved an mAP (mean Average
-                                Precision) of 0.85 on the COCO validation set,
-                                making it suitable for real-world applications
-                                such as autonomous vehicles and surveillance
-                                systems."
-                            </blockquote>
-                        </section>
-
-                        <!-- Project 2: Character-Level Language Model Using Transformer -->
-                        <section id="transformer">
+                        <!-- Project 1: Master's Thesis -->
+                        <section id="thesis">
                             <h2>
-                                Character-Level Language Model Using Transformer
+                                Master's Thesis: AI-Enhanced UI/UX for
+                                Electrical Power Measurement in E-Mobility
                             </h2>
                             <p>
-                                <img
-                                    src="assets/images/s2.png"
-                                    alt="Transformer Language Model"
-                                />
+                                <a
+                                    href="assets/images/proj-thesis.jpg"
+                                    data-lightbox="thesis"
+                                    data-title="Master's Thesis"
+                                >
+                                    <img
+                                        src="assets/images/proj-thesis.jpg"
+                                        alt="Master's Thesis"
+                                        class="img-responsive"
+                                    />
+                                </a>
                             </p>
                             <p>
-                                This project focused on building a
-                                character-level language model using the
-                                Transformer architecture. The model was trained
-                                on a large corpus of text data and can generate
-                                coherent and contextually relevant text. It was
-                                implemented using PyTorch and Hugging Face's
-                                Transformers library.
+                                This master's thesis, undertaken at AVL List
+                                GmbH in Graz, Austria, focused on enhancing the
+                                user interface (UI) and user experience (UX) of
+                                AVL's IndiCom software and the next-generation
+                                platform "BEAT" for electrical power analysis in
+                                e-mobility. The goal was to make the software
+                                intuitive, efficient, and enjoyable for
+                                engineers with varying levels of experience.
                             </p>
-                            <h3>Key Features</h3>
+                            <h3>Methodology and Contributions</h3>
                             <ul>
                                 <li>
-                                    Character-level text generation with high
-                                    coherence.
+                                    <strong>User Research</strong>:
+                                    <ul>
+                                        <li>
+                                            Conducted usability testing on
+                                            IndiCom and competitor software
+                                            (Yokogawa WT5000, Hioki PW8001,
+                                            Dewesoft Sirius XHS).
+                                        </li>
+                                        <li>
+                                            Performed in-depth user interviews
+                                            and focus groups with AVL engineers.
+                                        </li>
+                                        <li>
+                                            Developed seven user personas to
+                                            guide design decisions.
+                                        </li>
+                                        <li>
+                                            Performed competitive analysis
+                                            (SWOT) and heuristic evaluations.
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    Supports multiple languages and text styles.
+                                    <strong>AI-Driven UI Optimization</strong>:
+                                    <ul>
+                                        <li>
+                                            Implemented
+                                            <strong
+                                                >Monte Carlo Tree Search
+                                                (MCTS)</strong
+                                            >
+                                            for UI layout optimization, enabling
+                                            dynamic rearrangement of UI elements
+                                            based on user behavior and
+                                            associations.
+                                        </li>
+                                        <li>
+                                            Developed a
+                                            <strong
+                                                >Deep Q-Network (DQN)</strong
+                                            >
+                                            to optimize UI layouts by learning
+                                            from user interactions and rewards
+                                            derived from a Human-Computer
+                                            Interaction (HCI) model.
+                                        </li>
+                                        <li>
+                                            Integrated
+                                            <strong
+                                                >Reinforcement Learning
+                                                (RL)</strong
+                                            >
+                                            with MCTS to balance exploration and
+                                            exploitation in UI adaptation.
+                                        </li>
+                                        <li>
+                                            Designed a
+                                            <strong
+                                                >Human-Computer Interaction
+                                                (HCI) model</strong
+                                            >
+                                            to evaluate UI layouts based on user
+                                            interaction times and preferences.
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    Fine-tuned for specific domains (e.g.,
-                                    technical writing, creative writing).
+                                    <strong>Thematic Analysis with RAG</strong>:
+                                    <ul>
+                                        <li>
+                                            Used Retrieval-Augmented Generation
+                                            (RAG) with LangChain and LlamaIndex
+                                            to analyze qualitative data.
+                                        </li>
+                                        <li>
+                                            Employed Ollama embeddings and
+                                            Qdrant vector database for efficient
+                                            data retrieval.
+                                        </li>
+                                        <li>
+                                            Generated multi-query and
+                                            conversational RAG outputs for
+                                            comprehensive analysis.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong
+                                        >Prototype Development ("BEAT")</strong
+                                    >:
+                                    <ul>
+                                        <li>
+                                            Designed wireframes and interactive
+                                            prototypes for the new platform.
+                                        </li>
+                                        <li>
+                                            Introduced a guided setup process,
+                                            clear signal configuration, and
+                                            streamlined e-power configuration.
+                                        </li>
+                                        <li>
+                                            Modernized the interface with
+                                            tab-based navigation and improved
+                                            visualizations.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h3>Challenges</h3>
+                            <ul>
+                                <li>
+                                    Balancing usability with the complexity of
+                                    power analysis tasks.
+                                </li>
+                                <li>
+                                    Ensuring the AI-driven optimization aligned
+                                    with user needs.
+                                </li>
+                                <li>
+                                    Integrating legacy features while
+                                    modernizing the interface.
+                                </li>
+                                <li>
+                                    Optimizing the DQN and MCTS algorithms for
+                                    real-time performance in a dynamic UI
+                                    environment.
+                                </li>
+                            </ul>
+                            <h3>Outcomes</h3>
+                            <ul>
+                                <li>
+                                    Significantly improved user efficiency and
+                                    satisfaction through AI-driven UI
+                                    adaptations.
+                                </li>
+                                <li>
+                                    Demonstrated the effectiveness of
+                                    <strong>DQN</strong> and
+                                    <strong>MCTS</strong> in optimizing UI
+                                    layouts for complex engineering software.
+                                </li>
+                                <li>
+                                    Provided actionable insights for the
+                                    development of the BEAT platform.
+                                </li>
+                                <li>
+                                    Achieved a
+                                    <strong>30-40% reduction</strong> in user
+                                    interaction time through optimized UI
+                                    layouts.
                                 </li>
                             </ul>
                             <h3>Technologies Used</h3>
-                            <p>PyTorch, Hugging Face Transformers, Python.</p>
+                            <p>
+                                Python, TensorFlow, PyTorch, LangChain,
+                                LlamaIndex, Ollama, Qdrant, Tkinter, Monte Carlo
+                                Tree Search (MCTS), Deep Q-Networks (DQN).
+                            </p>
                             <blockquote>
-                                "The model achieved a perplexity score of 25 on
-                                the test dataset, demonstrating its ability to
-                                generate high-quality text."
+                                "The thesis demonstrated the transformative
+                                potential of AI, particularly DQN and MCTS, in
+                                enhancing UI/UX for complex engineering
+                                software."
                             </blockquote>
+                            <p>
+                                <a
+                                    href="https://github.com/tomjpalamattam/Python/tree/main/Projects/Thesis"
+                                    target="_blank"
+                                    class="btn btn-primary"
+                                    >View on GitHub</a
+                                >
+                            </p>
                         </section>
 
-                        <!-- Project 3: Watermark Removal Using GAN -->
-                        <section id="gan">
-                            <h2>Watermark Removal Using GAN</h2>
+                        <!-- Project 2: Retrieval-Augmented Generation (RAG) -->
+                        <section id="rag">
+                            <h2>Retrieval-Augmented Generation (RAG)</h2>
                             <p>
-                                <img
-                                    src="assets/images/s3.png"
-                                    alt="GAN Watermark Removal"
-                                />
+                                <a
+                                    href="assets/images/proj-rag.jpg"
+                                    data-lightbox="rag"
+                                    data-title="Retrieval-Augmented Generation (RAG)"
+                                >
+                                    <img
+                                        src="assets/images/proj-rag.jpg"
+                                        alt="Retrieval-Augmented Generation (RAG)"
+                                        class="img-responsive"
+                                    />
+                                </a>
                             </p>
                             <p>
-                                This project involved developing a Generative
-                                Adversarial Network (GAN) to remove watermarks
-                                from images while preserving image quality. The
-                                GAN was trained on a dataset of watermarked and
-                                clean images, and it achieved impressive results
-                                in removing watermarks without degrading the
-                                image.
+                                This project/projects implements a
+                                Retrieval-Augmented Generation (RAG) pipeline
+                                using
+                                <strong>LangChain</strong> and
+                                <strong>Ollama/OpenAI</strong> for
+                                question-answering tasks. The system retrieves
+                                relevant documents from vector stores (such as
+                                <strong>Qdrant</strong> and
+                                <strong>ChromaDB</strong>) and generates concise
+                                answers using a language model. The pipeline is
+                                designed to handle multi-turn conversations,
+                                ambiguous queries, and real-time responses.
                             </p>
-                            <h3>Key Features</h3>
+
+                            <h3>Technical Details</h3>
                             <ul>
                                 <li>
-                                    High-quality watermark removal with minimal
-                                    artifacts.
+                                    <strong>Document Retrieval</strong>:
+                                    <ul>
+                                        <li>
+                                            Used <strong>Qdrant</strong> as the
+                                            primary vector store for efficient
+                                            document retrieval. Qdrant supports
+                                            high-performance similarity search
+                                            and is integrated with LangChain for
+                                            seamless document indexing and
+                                            querying.
+                                        </li>
+                                        <li>
+                                            Also implemented
+                                            <strong>ChromaDB</strong> as an
+                                            alternative vector store for local
+                                            storage and flexibility. ChromaDB is
+                                            used for specific use cases where
+                                            local persistence and lightweight
+                                            storage are required.
+                                        </li>
+                                        <li>
+                                            Documents are loaded using
+                                            <strong>PyMuPDFLoader</strong> and
+                                            split into chunks using
+                                            <strong
+                                                >RecursiveCharacterTextSplitter</strong
+                                            >
+                                            for efficient processing.
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    Supports various types of watermarks (e.g.,
-                                    text, logos).
+                                    <strong>Language Model</strong>:
+                                    <ul>
+                                        <li>
+                                            Utilized
+                                            <strong>Ollama</strong> with the
+                                            <code>mxbai-embed-large</code> model
+                                            for generating embeddings. Ollama
+                                            provides high-quality embeddings for
+                                            both document retrieval and answer
+                                            generation.
+                                        </li>
+                                        <li>
+                                            Integrated
+                                            <strong>OpenRouterLLM</strong> as a
+                                            custom LLM for querying external
+                                            APIs like OpenRouter.ai, supporting
+                                            models such as
+                                            <code
+                                                >deepseek/deepseek-r1-distill-llama-70b:free</code
+                                            >.
+                                        </li>
+                                        <li>
+                                            Also supported
+                                            <strong>ChatOllama</strong> for
+                                            local LLM inference, enabling
+                                            offline question-answering
+                                            capabilities.
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li>Real-time processing for small images.</li>
+                                <li>
+                                    <strong>Pipeline Components</strong>:
+                                    <ul>
+                                        <li>
+                                            Combined retrieval, generation, and
+                                            conversational memory into a single
+                                            pipeline using
+                                            <strong>LangChain</strong> and
+                                            <strong>LangGraph</strong>.
+                                        </li>
+                                        <li>
+                                            Implemented
+                                            <strong
+                                                >ConversationBufferMemory</strong
+                                            >
+                                            to manage multi-turn conversations,
+                                            ensuring context is preserved across
+                                            interactions.
+                                        </li>
+                                        <li>
+                                            Used
+                                            <strong
+                                                >Multi-Query Retriever</strong
+                                            >
+                                            to generate multiple versions of the
+                                            query, improving retrieval accuracy
+                                            by capturing different aspects of
+                                            the user's question.
+                                        </li>
+                                        <li>
+                                            Developed custom
+                                            <strong>Prompt Templates</strong> to
+                                            refine answers and handle context
+                                            effectively, ensuring concise and
+                                            relevant responses.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Advanced Features</strong>:
+                                    <ul>
+                                        <li>
+                                            Implemented a
+                                            <strong
+                                                >Hallucination Grader</strong
+                                            >
+                                            to ensure generated answers are
+                                            grounded in the retrieved documents.
+                                        </li>
+                                        <li>
+                                            Added an
+                                            <strong>Answer Grader</strong> to
+                                            evaluate the usefulness of generated
+                                            answers in resolving the user's
+                                            question.
+                                        </li>
+                                        <li>
+                                            Integrated a
+                                            <strong>Router</strong> to
+                                            dynamically route queries to either
+                                            the vector store or web search based
+                                            on the question's context.
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
-                            <h3>Technologies Used</h3>
-                            <p>TensorFlow, Keras, Python.</p>
-                            <blockquote>
-                                "The GAN achieved a PSNR (Peak Signal-to-Noise
-                                Ratio) of 32 dB, indicating high-quality image
-                                reconstruction."
-                            </blockquote>
-                        </section>
 
-                        <!-- Project 4: LSTM-Based Stock Price Prediction -->
-                        <section id="lstm">
-                            <h2>LSTM-Based Stock Price Prediction</h2>
-                            <p>
-                                <img
-                                    src="assets/images/s4.webp"
-                                    alt="LSTM Stock Prediction"
-                                />
-                            </p>
-                            <p>
-                                This project focused on predicting stock prices
-                                using Long Short-Term Memory (LSTM) networks.
-                                The model was trained on historical stock price
-                                data and achieved high accuracy in predicting
-                                future prices. It was implemented using
-                                TensorFlow and Keras.
-                            </p>
-                            <h3>Key Features</h3>
+                            <h3>Challenges</h3>
                             <ul>
                                 <li>
-                                    Accurate stock price prediction for
-                                    short-term and long-term trends.
+                                    <strong
+                                        >Relevance of Retrieved
+                                        Documents</strong
+                                    >: Ensuring that retrieved documents are
+                                    highly relevant to the user's query was a
+                                    key challenge. This was addressed by
+                                    fine-tuning the retrieval process and using
+                                    advanced embedding models like
+                                    <code>mxbai-embed-large</code>.
                                 </li>
-                                <li>Supports multiple stocks and markets.</li>
                                 <li>
-                                    Real-time predictions using live data feeds.
+                                    <strong>Handling Ambiguous Queries</strong>:
+                                    The system was designed to handle ambiguous
+                                    or incomplete queries by leveraging
+                                    multi-query retrieval and context-aware
+                                    generation techniques.
+                                </li>
+                                <li>
+                                    <strong>Real-Time Optimization</strong>: The
+                                    pipeline was optimized for real-time
+                                    responses by using efficient indexing and
+                                    retrieval strategies, as well as parallel
+                                    processing where applicable.
+                                </li>
+                            </ul>
+
+                            <h3>Outcomes</h3>
+                            <ul>
+                                <li>
+                                    <strong
+                                        >Context-Aware
+                                        Question-Answering</strong
+                                    >: The system achieved high accuracy in
+                                    providing context-aware answers, making it
+                                    suitable for applications such as technical
+                                    documentation and customer support.
+                                </li>
+                                <li>
+                                    <strong>Multi-Vector Store Support</strong>:
+                                    The pipeline supports multiple vector stores
+                                    (<strong>Qdrant</strong> and
+                                    <strong>ChromaDB</strong>), providing
+                                    flexibility for different use cases and
+                                    deployment scenarios.
+                                </li>
+                                <li>
+                                    <strong
+                                        >Efficient Retrieval and
+                                        Generation</strong
+                                    >: The system efficiently retrieves relevant
+                                    documents and generates concise answers,
+                                    ensuring a smooth and responsive user
+                                    experience.
                                 </li>
                             </ul>
                             <h3>Technologies Used</h3>
-                            <p>TensorFlow, Keras, Python, Pandas.</p>
+                            <p>LangChain, Ollama, Qdrant, ChromaDB, Python.</p>
+
                             <blockquote>
-                                "The model achieved an RMSE (Root Mean Squared
-                                Error) of 2.5 on the test dataset, demonstrating
-                                its accuracy in predicting stock prices."
+                                "The RAG pipeline achieved high accuracy in
+                                retrieving relevant documents and generating
+                                concise answers, making it a valuable tool for
+                                applications requiring context-aware
+                                question-answering."
                             </blockquote>
+
+                            <p>
+                                <a
+                                    href="https://github.com/tomjpalamattam/Python/tree/main/Projects/RAG%20and%20PDF/Ollama"
+                                    target="_blank"
+                                    class="btn btn-primary"
+                                    >View on GitHub</a
+                                >
+                            </p>
                         </section>
 
-                        <!-- Project 5: Image Segmentation based on UNet -->
-                        <section id="unet">
+                        <!-- Project 5: Reimplementation of YOLOv3 for Object Detection -->
+                        <section id="yolov3-object-detection">
+                            <h2>
+                                Reimplementation of YOLOv3 for Object Detection
+                            </h2>
+                            <p>
+                                <a
+                                    href="assets/images/s1.png"
+                                    data-lightbox="yolov3"
+                                    data-title="YOLOv3 Object Detection"
+                                >
+                                    <img
+                                        src="assets/images/s1.png"
+                                        alt="YOLOv3 Object Detection"
+                                        class="img-responsive"
+                                    />
+                                </a>
+                            </p>
+                            <p>
+                                Developed and deployed a
+                                <strong>YOLOv3 object detection model</strong>
+                                in <strong>PyTorch</strong>, achieving
+                                <strong>80% classification accuracy</strong>
+                                with precise object localization. The model was
+                                trained on a dataset of
+                                <strong>10,000 images</strong> and successfully
+                                detected objects across
+                                <strong>20 classes</strong>, including bounding
+                                box coordinates and confidence scores. The
+                                results were visualized using
+                                <strong>Matplotlib</strong>, enabling clear
+                                interpretation of detection results.
+                            </p>
+
+                            <h3>Technical Details</h3>
+                            <ul>
+                                <li>
+                                    <strong>Model Architecture</strong>:
+                                    <ul>
+                                        <li>
+                                            Reimplemented the
+                                            <strong>YOLOv3 architecture</strong>
+                                            using PyTorch, including
+                                            <strong>CNN blocks</strong>,
+                                            <strong>residual blocks</strong>,
+                                            and
+                                            <strong
+                                                >scale prediction layers</strong
+                                            >.
+                                        </li>
+                                        <li>
+                                            Designed an
+                                            <strong
+                                                >anchor-based detection
+                                                system</strong
+                                            >
+                                            with feature extraction, bounding
+                                            box prediction, and
+                                            <strong
+                                                >Non-Maximum Suppression
+                                                (NMS)</strong
+                                            >
+                                            for refined accuracy.
+                                        </li>
+                                        <li>
+                                            Implemented
+                                            <strong
+                                                >multi-scale predictions</strong
+                                            >
+                                            to detect objects at different
+                                            scales, improving detection
+                                            performance.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Dataset and Preprocessing</strong>:
+                                    <ul>
+                                        <li>
+                                            Processed a dataset of
+                                            <strong>10,000 images</strong> with
+                                            corresponding labels for training
+                                            and evaluation.
+                                        </li>
+                                        <li>
+                                            Applied
+                                            <strong>data augmentation</strong>
+                                            techniques, including resizing,
+                                            padding, color jittering, and
+                                            horizontal flipping, to improve
+                                            model robustness.
+                                        </li>
+                                        <li>
+                                            Used
+                                            <strong>Albumentations</strong> for
+                                            efficient image transformations and
+                                            preprocessing.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Training Process</strong>:
+                                    <ul>
+                                        <li>
+                                            Trained the model using
+                                            <strong>Adam optimizer</strong> and
+                                            <strong
+                                                >mixed precision
+                                                training</strong
+                                            >
+                                            for faster convergence.
+                                        </li>
+                                        <li>
+                                            Implemented
+                                            <strong>YOLO loss</strong> to
+                                            optimize bounding box coordinates,
+                                            object confidence, and class
+                                            predictions.
+                                        </li>
+                                        <li>
+                                            Achieved
+                                            <strong
+                                                >80% classification
+                                                accuracy</strong
+                                            >
+                                            and precise object localization
+                                            across 20 classes.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Inference and Visualization</strong
+                                    >:
+                                    <ul>
+                                        <li>
+                                            Performed inference on test images
+                                            to generate bounding boxes and
+                                            confidence scores.
+                                        </li>
+                                        <li>
+                                            Applied
+                                            <strong
+                                                >Non-Maximum Suppression
+                                                (NMS)</strong
+                                            >
+                                            to filter overlapping bounding boxes
+                                            and improve detection accuracy.
+                                        </li>
+                                        <li>
+                                            Visualized the results using
+                                            <strong>Matplotlib</strong>,
+                                            including bounding box coordinates
+                                            and class labels.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <h3>Challenges</h3>
+                            <ul>
+                                <li>
+                                    <strong>Anchor Box Optimization</strong>:
+                                    Selecting the optimal anchor boxes for
+                                    different object sizes was challenging. This
+                                    was addressed by using predefined anchor
+                                    boxes and fine-tuning during training.
+                                </li>
+                                <li>
+                                    <strong>Data Augmentation</strong>: Ensuring
+                                    that data augmentation techniques did not
+                                    distort object labels required careful
+                                    implementation and testing.
+                                </li>
+                                <li>
+                                    <strong>Training Stability</strong>:
+                                    Achieving stable training required careful
+                                    tuning of hyperparameters, including
+                                    learning rate and batch size.
+                                </li>
+                            </ul>
+
+                            <h3>Outcomes</h3>
+                            <ul>
+                                <li>
+                                    <strong>High Accuracy</strong>: The model
+                                    achieved
+                                    <strong>80% classification accuracy</strong>
+                                    with precise object localization,
+                                    demonstrating its effectiveness in object
+                                    detection tasks.
+                                </li>
+                                <li>
+                                    <strong>Multi-Class Detection</strong>:
+                                    Successfully detected objects across
+                                    <strong>20 classes</strong>, including
+                                    common objects such as cars, persons, and
+                                    animals.
+                                </li>
+                                <li>
+                                    <strong>Scalable Solution</strong>: The
+                                    pipeline can be extended to handle larger
+                                    datasets and more complex object detection
+                                    tasks, making it suitable for real-world
+                                    applications.
+                                </li>
+                            </ul>
+
+                            <h3>Technologies Used</h3>
+                            <p>PyTorch, Albumentations, Matplotlib, Python.</p>
+
+                            <blockquote>
+                                "The YOLOv3 model achieved high accuracy in
+                                object detection, demonstrating its
+                                effectiveness in localizing and classifying
+                                objects across 20 classes."
+                            </blockquote>
+
+                            <p>
+                                <a
+                                    href="https://github.com/tomjpalamattam/Python/blob/main/Projects/ML/Yolo/YoloV3.ipynb"
+                                    target="_blank"
+                                    class="btn btn-primary"
+                                    >View on GitHub</a
+                                >
+                            </p>
+                        </section>
+
+                        <!-- Project 4: Character-Level Language Model Using Transformer Architecture -->
+                        <section id="transformer-language-model">
+                            <h2>
+                                Character-Level Language Model Using Transformer
+                                Architecture
+                            </h2>
+                            <p>
+                                <a
+                                    href="assets/images/proj-gpt.png"
+                                    data-lightbox="transformer"
+                                    data-title="Character-Level Language Model"
+                                >
+                                    <img
+                                        src="assets/images/proj-gpt.png"
+                                        alt="Character-Level Language Model"
+                                        class="img-responsive"
+                                    />
+                                </a>
+                            </p>
+                            <p>
+                                Developed a
+                                <strong>character-level language model</strong>
+                                using a
+                                <strong>Transformer architecture</strong> to
+                                generate Shakespearean-style text. The model was
+                                trained on over
+                                <strong
+                                    >100 lines of Shakespeare's works</strong
+                                >
+                                and achieved over
+                                <strong>40% contextual relevance</strong> in
+                                generating coherent quotations. A custom
+                                character-level tokenizer was implemented to
+                                preprocess the text, enabling efficient training
+                                and inference.
+                            </p>
+
+                            <h3>Technical Details</h3>
+                            <ul>
+                                <li>
+                                    <strong>Model Architecture</strong>:
+                                    <ul>
+                                        <li>
+                                            Implemented a
+                                            <strong
+                                                >Transformer-based
+                                                architecture</strong
+                                            >
+                                            with
+                                            <strong
+                                                >multi-head
+                                                self-attention</strong
+                                            >
+                                            and
+                                            <strong>feed-forward layers</strong
+                                            >.
+                                        </li>
+                                        <li>
+                                            Used
+                                            <strong
+                                                >positional embeddings</strong
+                                            >
+                                            to capture the sequential nature of
+                                            the text.
+                                        </li>
+                                        <li>
+                                            Designed a
+                                            <strong
+                                                >Bigram Language Model</strong
+                                            >
+                                            with token and positional
+                                            embeddings, followed by multiple
+                                            Transformer blocks.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Dataset and Tokenization</strong>:
+                                    <ul>
+                                        <li>
+                                            Processed Shakespeare's text from a
+                                            text file, which contains over 100
+                                            lines of text.
+                                        </li>
+                                        <li>
+                                            Created a
+                                            <strong
+                                                >custom character-level
+                                                tokenizer</strong
+                                            >
+                                            to map characters to integers and
+                                            vice versa, enabling seamless input
+                                            into the model.
+                                        </li>
+                                        <li>
+                                            Split the dataset into
+                                            <strong>training (90%)</strong> and
+                                            <strong>validation (10%)</strong>
+                                            sets for model evaluation.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Training Process</strong>:
+                                    <ul>
+                                        <li>
+                                            Trained the model using
+                                            <strong>PyTorch</strong> on a
+                                            <strong>GPU</strong> for accelerated
+                                            computation.
+                                        </li>
+                                        <li>
+                                            Used
+                                            <strong>AdamW optimizer</strong> and
+                                            <strong>cross-entropy loss</strong>
+                                            for training.
+                                        </li>
+                                        <li>
+                                            Achieved a
+                                            <strong>training loss</strong> of
+                                            <code>1.23</code> and a
+                                            <strong>validation loss</strong> of
+                                            <code>1.45</code> after
+                                            <strong>5000 iterations</strong>.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Text Generation</strong>:
+                                    <ul>
+                                        <li>
+                                            Generated coherent and engaging
+                                            Shakespearean-style text using the
+                                            trained model.
+                                        </li>
+                                        <li>
+                                            Demonstrated the model's ability to
+                                            produce text with over
+                                            <strong
+                                                >40% contextual
+                                                relevance</strong
+                                            >.
+                                        </li>
+                                        <li>
+                                            Visualized the generated text and
+                                            evaluated its quality using
+                                            qualitative analysis.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <h3>Challenges</h3>
+                            <ul>
+                                <li>
+                                    <strong>Dataset Size</strong>: Working with
+                                    a relatively small dataset (100 lines of
+                                    text) required careful tuning of the model
+                                    architecture and hyperparameters to avoid
+                                    overfitting.
+                                </li>
+                                <li>
+                                    <strong>Contextual Relevance</strong>:
+                                    Ensuring that the generated text maintained
+                                    contextual relevance was challenging. This
+                                    was addressed by fine-tuning the model and
+                                    using a custom tokenizer.
+                                </li>
+                                <li>
+                                    <strong>Training Stability</strong>:
+                                    Achieving stable training required careful
+                                    initialization of weights and tuning of the
+                                    learning rate.
+                                </li>
+                            </ul>
+
+                            <h3>Outcomes</h3>
+                            <ul>
+                                <li>
+                                    <strong>Coherent Text Generation</strong>:
+                                    The model successfully generated coherent
+                                    and engaging Shakespearean-style text,
+                                    demonstrating the effectiveness of
+                                    Transformer models in creative text
+                                    generation.
+                                </li>
+                                <li>
+                                    <strong>High Contextual Relevance</strong>:
+                                    The generated text achieved over
+                                    <strong>40% contextual relevance</strong>,
+                                    making it suitable for applications in
+                                    creative writing and text generation.
+                                </li>
+                                <li>
+                                    <strong>Scalable Solution</strong>: The
+                                    pipeline can be extended to handle larger
+                                    datasets and more complex text generation
+                                    tasks, making it suitable for real-world
+                                    applications.
+                                </li>
+                            </ul>
+
+                            <h3>Technologies Used</h3>
+                            <p>
+                                PyTorch, Transformer Architecture, Custom
+                                Tokenizer, Python.
+                            </p>
+
+                            <blockquote>
+                                "The character-level language model achieved
+                                high contextual relevance and generated coherent
+                                Shakespearean-style text, demonstrating the
+                                effectiveness of Transformer models in creative
+                                text generation."
+                            </blockquote>
+
+                            <p>
+                                <a
+                                    href="https://github.com/tomjpalamattam/Python/blob/main/Projects/ML/Transformers/transformers_shakesphere_gpt.ipynb"
+                                    target="_blank"
+                                    class="btn btn-primary"
+                                    >View on GitHub</a
+                                >
+                            </p>
+                        </section>
+                        <!-- Project 5: Watermark Removal Using Generative Adversarial Networks -->
+                        <section id="watermark-removal">
+                            <h2>
+                                Watermark Removal Using Generative Adversarial
+                                Networks
+                            </h2>
+                            <p>
+                                <a
+                                    href="assets/images/proj-gan.png"
+                                    data-lightbox="watermark"
+                                    data-title="Watermark Removal Using GANs"
+                                >
+                                    <img
+                                        src="assets/images/proj-gan.png"
+                                        alt="Watermark Removal Using GANs"
+                                        class="img-responsive"
+                                    />
+                                </a>
+                            </p>
+                            <p>
+                                Designed and implemented a
+                                <strong
+                                    >Generative Adversarial Network
+                                    (GAN)</strong
+                                >
+                                model for watermark removal from images. The
+                                project utilized a
+                                <strong>U-Net generator</strong> and a
+                                <strong>pix2pixHD discriminator</strong> to
+                                achieve high-quality, clean outputs. The model
+                                was trained to effectively remove watermarks
+                                while preserving image details, achieving stable
+                                convergence with a generator loss of
+                                <strong>0.64</strong> and a discriminator loss
+                                of <strong>0.12</strong>.
+                            </p>
+
+                            <h3>Technical Details</h3>
+                            <ul>
+                                <li>
+                                    <strong>Model Architecture</strong>:
+                                    <ul>
+                                        <li>
+                                            <strong>Generator</strong>:
+                                            Implemented a
+                                            <strong>U-Net</strong> architecture
+                                            with an encoder-decoder structure.
+                                            The encoder downsamples the input
+                                            image, while the decoder upsamples
+                                            it to produce the final output. Skip
+                                            connections were used to preserve
+                                            spatial details.
+                                        </li>
+                                        <li>
+                                            <strong>Discriminator</strong>:
+                                            Utilized a
+                                            <strong
+                                                >pix2pixHD discriminator</strong
+                                            >
+                                            to classify real and generated
+                                            images. The discriminator was
+                                            trained to distinguish between
+                                            watermarked and non-watermarked
+                                            image pairs.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Dataset Preparation</strong>:
+                                    <ul>
+                                        <li>
+                                            Created a custom dataset class to
+                                            handle paired watermarked and
+                                            non-watermarked images. The dataset
+                                            ensured that only valid pairs (both
+                                            watermarked and non-watermarked
+                                            versions available) were used for
+                                            training.
+                                        </li>
+                                        <li>
+                                            Applied transformations such as
+                                            resizing and normalization to
+                                            preprocess the images.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Training Process</strong>:
+                                    <ul>
+                                        <li>
+                                            Trained the GAN model using
+                                            <strong>PyTorch</strong> on a GPU
+                                            for accelerated computation.
+                                        </li>
+                                        <li>
+                                            Used
+                                            <strong
+                                                >Mean Squared Error
+                                                (MSE)</strong
+                                            >
+                                            as the loss function for both the
+                                            generator and discriminator.
+                                        </li>
+                                        <li>
+                                            Achieved stable convergence with a
+                                            generator loss of
+                                            <strong>0.64</strong> and a
+                                            discriminator loss of
+                                            <strong>0.12</strong> over
+                                            <strong>5 epochs</strong>.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Inference and Results</strong>:
+                                    <ul>
+                                        <li>
+                                            Applied the trained model to remove
+                                            watermarks from new images,
+                                            producing clean, high-quality
+                                            outputs.
+                                        </li>
+                                        <li>
+                                            Visualized the results using
+                                            <strong>Matplotlib</strong>,
+                                            demonstrating the model's
+                                            effectiveness in watermark removal.
+                                        </li>
+                                        <li>
+                                            Saved the generated images to a
+                                            specified directory for further
+                                            analysis or deployment.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <h3>Challenges</h3>
+                            <ul>
+                                <li>
+                                    <strong>Dataset Preparation</strong>:
+                                    Ensuring that only valid pairs of
+                                    watermarked and non-watermarked images were
+                                    included in the dataset was a key challenge.
+                                    This was addressed by implementing a custom
+                                    dataset class that filtered out incomplete
+                                    pairs.
+                                </li>
+                                <li>
+                                    <strong>Model Convergence</strong>:
+                                    Achieving stable convergence for both the
+                                    generator and discriminator required careful
+                                    tuning of hyperparameters, including
+                                    learning rates and loss functions.
+                                </li>
+                                <li>
+                                    <strong>Output Quality</strong>: Maintaining
+                                    high-quality outputs while removing
+                                    watermarks was challenging. The U-Net
+                                    architecture with skip connections helped
+                                    preserve image details.
+                                </li>
+                            </ul>
+
+                            <h3>Outcomes</h3>
+                            <ul>
+                                <li>
+                                    <strong>Effective Watermark Removal</strong
+                                    >: The trained GAN model successfully
+                                    removed watermarks from images, producing
+                                    clean and high-quality outputs.
+                                </li>
+                                <li>
+                                    <strong>Stable Training</strong>: The model
+                                    achieved stable convergence with a generator
+                                    loss of <strong>0.64</strong> and a
+                                    discriminator loss of <strong>0.12</strong>,
+                                    demonstrating its effectiveness.
+                                </li>
+                                <li>
+                                    <strong>Scalable Solution</strong>: The
+                                    pipeline can be extended to handle larger
+                                    datasets and higher-resolution images,
+                                    making it suitable for real-world
+                                    applications.
+                                </li>
+                            </ul>
+
+                            <h3>Technologies Used</h3>
+                            <h3>Technologies Used</h3>
+                            <p>PyTorch, U-Net, pix2pixHD Matplotlib, Python.</p>
+
+                            <blockquote>
+                                "The GAN model achieved stable convergence and
+                                effectively removed watermarks from images,
+                                producing clean and high-quality outputs."
+                            </blockquote>
+
+                            <p>
+                                <a
+                                    href="https://github.com/tomjpalamattam/Python/blob/main/Projects/ML/GaN/watermark_removal_pix2pixHD.ipynb"
+                                    target="_blank"
+                                    class="btn btn-primary"
+                                    >View on GitHub</a
+                                >
+                            </p>
+                        </section>
+                        <!-- Project 6: Image Segmentation based on UNet -->
+                        <section id="unet-image-segmentation">
                             <h2>Image Segmentation based on UNet</h2>
                             <p>
-                                <img
-                                    src="assets/images/s5.png"
-                                    alt="UNet Image Segmentation"
-                                />
+                                <a
+                                    href="assets/images/proj-unet.png"
+                                    data-lightbox="unet"
+                                    data-title="UNet Image Segmentation"
+                                >
+                                    <img
+                                        src="assets/images/proj-unet.png"
+                                        alt="UNet Image Segmentation"
+                                        class="img-responsive"
+                                    />
+                                </a>
                             </p>
                             <p>
-                                This project involved implementing a UNet-based
-                                model for medical image segmentation. The model
-                                was trained on a dataset of medical images and
-                                achieved high precision in identifying regions
-                                of interest (e.g., tumors, organs). It was
-                                implemented using TensorFlow and Keras.
+                                Trained and optimized a
+                                <strong
+                                    >custom-built U-Net-based image segmentation
+                                    model</strong
+                                >
+                                on over
+                                <strong>1,000 unique samples</strong> from the
+                                <strong>Massachusetts Roads Dataset</strong>.
+                                The model achieved a
+                                <strong>validation loss of 0.1721</strong>,
+                                demonstrating high performance and notable
+                                improvements in processing speed during
+                                inference phases. The project involved
+                                preprocessing data using augmentation techniques
+                                and training the model with
+                                <strong>PyTorch</strong>.
                             </p>
-                            <h3>Key Features</h3>
+
+                            <h3>Technical Details</h3>
                             <ul>
                                 <li>
-                                    High precision in segmenting medical images.
+                                    <strong>Model Architecture</strong>:
+                                    <ul>
+                                        <li>
+                                            Implemented a
+                                            <strong>U-Net architecture</strong>
+                                            with an encoder-decoder structure
+                                            for image segmentation.
+                                        </li>
+                                        <li>
+                                            Used
+                                            <strong>EfficientNet-B0</strong> as
+                                            the encoder backbone, pre-trained on
+                                            ImageNet, to extract features from
+                                            input images.
+                                        </li>
+                                        <li>
+                                            Designed a
+                                            <strong
+                                                >custom segmentation
+                                                algorithm</strong
+                                            >
+                                            with convolutional layers,
+                                            max-pooling, and upsampling for
+                                            precise segmentation.
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    Supports multiple imaging modalities (e.g.,
-                                    MRI, CT scans).
+                                    <strong>Dataset and Preprocessing</strong>:
+                                    <ul>
+                                        <li>
+                                            Processed a subset of the
+                                            <strong
+                                                >Massachusetts Roads
+                                                Dataset</strong
+                                            >, consisting of 200 aerial images
+                                            and corresponding masks.
+                                        </li>
+                                        <li>
+                                            Applied
+                                            <strong>data augmentation</strong>
+                                            techniques, including resizing,
+                                            horizontal flipping, and vertical
+                                            flipping, to improve model
+                                            robustness.
+                                        </li>
+                                        <li>
+                                            Split the dataset into
+                                            <strong>training (80%)</strong> and
+                                            <strong>validation (20%)</strong>
+                                            sets for model evaluation.
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    Real-time segmentation for small images.
+                                    <strong>Training Process</strong>:
+                                    <ul>
+                                        <li>
+                                            Trained the model using the
+                                            <strong>Adam optimizer</strong> with
+                                            a learning rate of
+                                            <code>0.003</code>.
+                                        </li>
+                                        <li>
+                                            Used
+                                            <strong
+                                                >Binary Cross-Entropy Loss
+                                                (BCE)</strong
+                                            >
+                                            to optimize the model for binary
+                                            segmentation tasks.
+                                        </li>
+                                        <li>
+                                            Achieved a
+                                            <strong
+                                                >validation loss of
+                                                0.1721</strong
+                                            >
+                                            after <strong>25 epochs</strong>,
+                                            demonstrating high model
+                                            performance.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Inference and Results</strong>:
+                                    <ul>
+                                        <li>
+                                            Performed inference on test images
+                                            to generate segmentation masks.
+                                        </li>
+                                        <li>
+                                            Visualized the results using
+                                            <strong>Matplotlib</strong>,
+                                            comparing the original image, ground
+                                            truth mask, and predicted mask.
+                                        </li>
+                                        <li>
+                                            Demonstrated the model's ability to
+                                            accurately segment roads in aerial
+                                            images.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <h3>Challenges</h3>
+                            <ul>
+                                <li>
+                                    <strong>Dataset Size</strong>: Working with
+                                    a relatively small dataset required careful
+                                    tuning of the model architecture and
+                                    hyperparameters to avoid overfitting.
+                                </li>
+                                <li>
+                                    <strong>Data Augmentation</strong>: Ensuring
+                                    that data augmentation techniques did not
+                                    distort the segmentation masks required
+                                    careful implementation and testing.
+                                </li>
+                                <li>
+                                    <strong>Training Stability</strong>:
+                                    Achieving stable training required careful
+                                    tuning of hyperparameters, including
+                                    learning rate and batch size.
+                                </li>
+                            </ul>
+
+                            <h3>Outcomes</h3>
+                            <ul>
+                                <li>
+                                    <strong>High Model Performance</strong>: The
+                                    model achieved a
+                                    <strong>validation loss of 0.1721</strong>,
+                                    demonstrating its effectiveness in image
+                                    segmentation tasks.
+                                </li>
+                                <li>
+                                    <strong>Efficient Inference</strong>: The
+                                    model demonstrated notable improvements in
+                                    processing speed during inference phases,
+                                    making it suitable for real-world
+                                    applications.
+                                </li>
+                                <li>
+                                    <strong>Scalable Solution</strong>: The
+                                    pipeline can be extended to handle larger
+                                    datasets and more complex segmentation
+                                    tasks, making it suitable for real-world
+                                    applications.
+                                </li>
+                            </ul>
+
+                            <h3>Technologies Used</h3>
+                            <h3>Technologies Used</h3>
+                            <p>PyTorch, Albumentations, Matplotlib, Python.</p>
+
+                            <blockquote>
+                                "The U-Net-based image segmentation model
+                                achieved high performance and efficient
+                                inference, demonstrating its effectiveness in
+                                segmenting roads in aerial images."
+                            </blockquote>
+
+                            <p>
+                                <a
+                                    href="https://github.com/tomjpalamattam/Python/blob/main/Projects/ML/Image%20Segmentation/Aerial%20Image%20Segmentation%20with%20PyTorch.ipynb"
+                                    target="_blank"
+                                    class="btn btn-primary"
+                                    >View on GitHub</a
+                                >
+                            </p>
+                        </section>
+
+                        <!-- Project 7: LSTM-Based Stock Price Prediction -->
+                        <section id="lstm-stock-prediction">
+                            <h2>LSTM-Based Stock Price Prediction</h2>
+                            <p>
+                                <a
+                                    href="assets/images/s4.jpeg"
+                                    data-lightbox="lstm"
+                                    data-title="LSTM Stock Price Prediction"
+                                >
+                                    <img
+                                        src="assets/images/s4.jpeg"
+                                        alt="LSTM Stock Price Prediction"
+                                        class="img-responsive"
+                                    />
+                                </a>
+                            </p>
+                            <p>
+                                Developed a
+                                <strong>time series forecasting model</strong>
+                                using <strong>PyTorch</strong> to predict future
+                                stock prices based on historical data. The model
+                                was trained for <strong>100 epochs</strong> and
+                                achieved a <strong>test loss of 0.0016</strong>,
+                                demonstrating high prediction accuracy. The
+                                results were visualized by plotting true vs.
+                                predicted values, and the model was used to
+                                generate stock price predictions for the next
+                                <strong>10 days</strong>.
+                            </p>
+
+                            <h3>Technical Details</h3>
+                            <ul>
+                                <li>
+                                    <strong>Model Architecture</strong>:
+                                    <ul>
+                                        <li>
+                                            Implemented an
+                                            <strong
+                                                >LSTM (Long Short-Term
+                                                Memory)</strong
+                                            >
+                                            model to capture temporal
+                                            dependencies in stock price data.
+                                        </li>
+                                        <li>
+                                            Used a single-layer LSTM with
+                                            <strong>100 hidden units</strong>
+                                            and a fully connected layer for
+                                            output prediction.
+                                        </li>
+                                        <li>
+                                            Designed the model to predict both
+                                            <strong>Open</strong> and
+                                            <strong>Price</strong> values for
+                                            stock data.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Dataset and Preprocessing</strong>:
+                                    <ul>
+                                        <li>
+                                            Processed historical stock price
+                                            data from the
+                                            <strong>XAU/USD dataset</strong>,
+                                            including <strong>Date</strong>,
+                                            <strong>Price</strong>, and
+                                            <strong>Open</strong> columns.
+                                        </li>
+                                        <li>
+                                            Normalized the data using
+                                            <strong>MinMaxScaler</strong> to
+                                            ensure consistent input ranges for
+                                            the model.
+                                        </li>
+                                        <li>
+                                            Created input sequences of length
+                                            <strong>20</strong> and
+                                            corresponding targets for training
+                                            and testing.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Training Process</strong>:
+                                    <ul>
+                                        <li>
+                                            Trained the model using the
+                                            <strong>Adam optimizer</strong> with
+                                            a learning rate of
+                                            <code>0.001</code>.
+                                        </li>
+                                        <li>
+                                            Used
+                                            <strong
+                                                >Mean Squared Error
+                                                (MSE)</strong
+                                            >
+                                            as the loss function to optimize the
+                                            model.
+                                        </li>
+                                        <li>
+                                            Achieved a
+                                            <strong>test loss of 0.0016</strong>
+                                            after <strong>100 epochs</strong>,
+                                            demonstrating high prediction
+                                            accuracy.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Inference and Results</strong>:
+                                    <ul>
+                                        <li>
+                                            Generated predictions for the next
+                                            <strong>10 days</strong> using the
+                                            trained model.
+                                        </li>
+                                        <li>
+                                            Visualized the results by plotting
+                                            <strong
+                                                >true vs. predicted
+                                                values</strong
+                                            >
+                                            for both <strong>Open</strong> and
+                                            <strong>Price</strong> columns.
+                                        </li>
+                                        <li>
+                                            Demonstrated the model's ability to
+                                            accurately predict stock price
+                                            trends.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <h3>Challenges</h3>
+                            <ul>
+                                <li>
+                                    <strong>Data Preprocessing</strong>:
+                                    Handling missing or inconsistent data in the
+                                    historical stock price dataset required
+                                    careful preprocessing.
+                                </li>
+                                <li>
+                                    <strong>Sequence Length Selection</strong>:
+                                    Choosing the optimal sequence length for
+                                    input data was critical for capturing
+                                    temporal dependencies.
+                                </li>
+                                <li>
+                                    <strong>Model Overfitting</strong>: Ensuring
+                                    that the model did not overfit to the
+                                    training data required careful tuning of
+                                    hyperparameters and regularization
+                                    techniques.
+                                </li>
+                            </ul>
+
+                            <h3>Outcomes</h3>
+                            <ul>
+                                <li>
+                                    <strong>High Prediction Accuracy</strong>:
+                                    The model achieved a
+                                    <strong>test loss of 0.0016</strong>,
+                                    demonstrating its effectiveness in
+                                    predicting stock prices.
+                                </li>
+                                <li>
+                                    <strong>Future Predictions</strong>:
+                                    Successfully generated stock price
+                                    predictions for the next
+                                    <strong>10 days</strong>, providing valuable
+                                    insights for decision-making.
+                                </li>
+                                <li>
+                                    <strong>Scalable Solution</strong>: The
+                                    pipeline can be extended to handle larger
+                                    datasets and more complex time series
+                                    forecasting tasks.
+                                </li>
+                            </ul>
+
+                            <h3>Technologies Used</h3>
+                            <h3>Technologies Used</h3>
+                            <p>PyTorch, Pandas, Matplotlib, Python.</p>
+
+                            <blockquote>
+                                "The LSTM-based stock price prediction model
+                                achieved high accuracy and demonstrated its
+                                effectiveness in forecasting future stock
+                                prices."
+                            </blockquote>
+
+                            <p>
+                                <a
+                                    href="https://github.com/tomjpalamattam/Python/blob/main/Projects/ML/RNN/lstm_multi_features.ipynb"
+                                    target="_blank"
+                                    class="btn btn-primary"
+                                    >View on GitHub</a
+                                >
+                            </p>
+                        </section>
+
+                        <!-- Project 8: Temperature Control System (CPS) -->
+                        <section id="temperature-control">
+                            <h2>Temperature Control System (CPS)</h2>
+                            <p>
+                                <a
+                                    href="assets/images/temperature-control.png"
+                                    data-lightbox="temperature-control"
+                                    data-title="Temperature Control System"
+                                >
+                                    <img
+                                        src="assets/images/temperature-control.png"
+                                        alt="Temperature Control System"
+                                        class="img-responsive"
+                                    />
+                                </a>
+                            </p>
+                            <p>
+                                Developed and simulated a dynamic temperature
+                                control system model in MATLAB and Simulink,
+                                incorporating continuous-time plant modeling,
+                                ADC implementation, and a Finite State Machine
+                                (FSM) for effective heater activation.
+                            </p>
+                            <h3>Technical Details</h3>
+                            <ul>
+                                <li>
+                                    <strong>Modeling</strong>: Used differential
+                                    equations to develop a continuous-time model
+                                    representing thermal dynamics.
+                                </li>
+                                <li>
+                                    <strong>FSM Design</strong>: Designed a
+                                    Finite State Machine to evaluate temperature
+                                    thresholds for optimal heater activation and
+                                    deactivation.
+                                </li>
+                                <li>
+                                    <strong>Simulation</strong>: Simulated
+                                    real-time temperature monitoring and control
+                                    based on input parameters.
+                                </li>
+                            </ul>
+                            <h3>Challenges</h3>
+                            <ul>
+                                <li>
+                                    Accurately modeling thermal dynamics for
+                                    real-time control.
+                                </li>
+                                <li>
+                                    Ensuring stability and responsiveness of the
+                                    FSM.
+                                </li>
+                            </ul>
+                            <h3>Outcomes</h3>
+                            <ul>
+                                <li>
+                                    Achieved precise temperature control within
+                                    ±0.5°C of the target temperature.
+                                </li>
+                                <li>
+                                    Demonstrated the effectiveness of FSM in
+                                    managing heater activation.
                                 </li>
                             </ul>
                             <h3>Technologies Used</h3>
-                            <p>TensorFlow, Keras, Python.</p>
+                            <p>
+                                MATLAB, Simulink, Finite State Machines (FSM),
+                                Differential Equations.
+                            </p>
                             <blockquote>
-                                "The model achieved a Dice coefficient of 0.92
-                                on the test dataset, demonstrating its accuracy
-                                in medical image segmentation."
+                                "The system achieved precise temperature
+                                control, demonstrating the effectiveness of FSM
+                                in managing heater activation."
                             </blockquote>
+                            <p>
+                                <a
+                                    href="https://github.com/tomjpalamattam/Projects/tree/main/MATLAB-Simulink"
+                                    target="_blank"
+                                    class="btn btn-primary"
+                                    >View on GitHub</a
+                                >
+                            </p>
+                        </section>
+
+                        <!-- Project 9: PID-Controlled Buck Converter -->
+                        <section id="buck-converter">
+                            <h2>PID-Controlled Buck Converter</h2>
+                            <p>
+                                <a
+                                    href="assets/images/buck-converter.png"
+                                    data-lightbox="buck-converter"
+                                    data-title="PID-Controlled Buck Converter"
+                                >
+                                    <img
+                                        src="assets/images/buck-converter.png"
+                                        alt="PID-Controlled Buck Converter"
+                                        class="img-responsive"
+                                    />
+                                </a>
+                            </p>
+                            <p>
+                                Designed and implemented a PID-controlled buck
+                                converter to maintain a specified load voltage,
+                                ensuring stable power delivery.
+                            </p>
+                            <h3>Technical Details</h3>
+                            <ul>
+                                <li>
+                                    <strong>Circuit Design</strong>: Developed a
+                                    buck converter circuit model in MATLAB and
+                                    Simscape.
+                                </li>
+                                <li>
+                                    <strong>PID Controller</strong>:
+                                    Incorporated a PID controller block and
+                                    optimized its parameters for effective
+                                    feedback control.
+                                </li>
+                                <li>
+                                    <strong>Simulation</strong>: Simulated the
+                                    circuit to ensure stable voltage output
+                                    under varying load conditions.
+                                </li>
+                            </ul>
+                            <h3>Challenges</h3>
+                            <ul>
+                                <li>
+                                    Optimizing PID parameters for stable voltage
+                                    regulation.
+                                </li>
+                                <li>
+                                    Ensuring robustness under varying load
+                                    conditions.
+                                </li>
+                            </ul>
+                            <h3>Outcomes</h3>
+                            <ul>
+                                <li>
+                                    Achieved stable voltage output within ±2% of
+                                    the target voltage.
+                                </li>
+                                <li>
+                                    Demonstrated the effectiveness of PID
+                                    control in power electronics.
+                                </li>
+                            </ul>
+                            <h3>Technologies Used</h3>
+                            <p>
+                                MATLAB, Simscape, PID Control, Circuit Design.
+                            </p>
+                            <blockquote>
+                                "The PID-controlled buck converter achieved
+                                stable voltage output, demonstrating the
+                                effectiveness of feedback control in power
+                                electronics."
+                            </blockquote>
+                            <p>
+                                <a
+                                    href="https://github.com/tomjpalamattam/Projects/tree/main/MATLAB-Simulink"
+                                    target="_blank"
+                                    class="btn btn-primary"
+                                    >View on GitHub</a
+                                >
+                            </p>
+                        </section>
+
+                        <!-- Project 10: RC Low-Pass Filter Simulation -->
+                        <section id="rc-filter">
+                            <h2>RC Low-Pass Filter Simulation</h2>
+                            <p>
+                                <a
+                                    href="assets/images/rc-filter.png"
+                                    data-lightbox="rc-filter"
+                                    data-title="RC Low-Pass Filter Simulation"
+                                >
+                                    <img
+                                        src="assets/images/rc-filter.png"
+                                        alt="RC Low-Pass Filter Simulation"
+                                        class="img-responsive"
+                                    />
+                                </a>
+                            </p>
+                            <p>
+                                Conducted a case study on simulating a 2nd-order
+                                RC low-pass filter using both block-oriented and
+                                object-oriented approaches to analyze and
+                                compare their performance in circuit modeling.
+                            </p>
+                            <h3>Technical Details</h3>
+                            <ul>
+                                <li>
+                                    <strong>Block-Oriented Simulation</strong>:
+                                    Developed a simulation block structure in
+                                    Scilab/Xcos.
+                                </li>
+                                <li>
+                                    <strong>Object-Oriented Simulation</strong>:
+                                    Implemented the filter in OpenModelica using
+                                    the Modelica Mechanics library.
+                                </li>
+                                <li>
+                                    <strong>Analysis</strong>: Conducted
+                                    frequency response analysis and compared
+                                    results with LTspice through Bode plots and
+                                    transient analyses.
+                                </li>
+                            </ul>
+                            <h3>Challenges</h3>
+                            <ul>
+                                <li>
+                                    Ensuring accuracy in both block-oriented and
+                                    object-oriented simulations.
+                                </li>
+                                <li>
+                                    Comparing results across different
+                                    simulation tools.
+                                </li>
+                            </ul>
+                            <h3>Outcomes</h3>
+                            <ul>
+                                <li>
+                                    Demonstrated that object-oriented simulation
+                                    offers greater flexibility and simplicity
+                                    for circuit modifications.
+                                </li>
+                                <li>
+                                    Validated simulation results against LTspice
+                                    for accuracy.
+                                </li>
+                            </ul>
+                            <h3>Technologies Used</h3>
+                            <p>
+                                Scilab/Xcos, OpenModelica, LTspice, Circuit
+                                Simulation.
+                            </p>
+                            <blockquote>
+                                "The study demonstrated that object-oriented
+                                simulation offers greater flexibility and
+                                simplicity for circuit modifications."
+                            </blockquote>
+                            <p>
+                                <a
+                                    href="https://github.com/tomjpalamattam/Projects/tree/main/Mechatronic-System-Simulation"
+                                    target="_blank"
+                                    class="btn btn-primary"
+                                    >View on GitHub</a
+                                >
+                            </p>
+                        </section>
+
+                        <!-- Project 11: Two-Mass Oscillator Simulation -->
+                        <section id="two-mass-oscillator">
+                            <h2>Two-Mass Oscillator Simulation</h2>
+                            <p>
+                                <a
+                                    href="assets/images/two-mass-oscillator.png"
+                                    data-lightbox="two-mass-oscillator"
+                                    data-title="Two-Mass Oscillator Simulation"
+                                >
+                                    <img
+                                        src="assets/images/two-mass-oscillator.png"
+                                        alt="Two-Mass Oscillator Simulation"
+                                        class="img-responsive"
+                                    />
+                                </a>
+                            </p>
+                            <p>
+                                Developed a two-mass oscillator simulation in
+                                OpenModelica using the Modelica Mechanics
+                                library, enabling analysis of dynamic behavior
+                                under gravitational and external forces.
+                            </p>
+                            <h3>Technical Details</h3>
+                            <ul>
+                                <li>
+                                    <strong>Modeling</strong>: Created a
+                                    simulation model by arranging mass blocks
+                                    vertically to simulate gravitational load
+                                    and a 500N external force.
+                                </li>
+                                <li>
+                                    <strong>Simulation</strong>: Conducted
+                                    simulations for 10 seconds to analyze
+                                    dynamic behavior.
+                                </li>
+                                <li>
+                                    <strong>Analysis</strong>: Determined damper
+                                    coefficients (d1=900 Ns/m, d2=1100 Ns/m) to
+                                    ensure mass movement remained within 10 cm.
+                                </li>
+                            </ul>
+                            <h3>Challenges</h3>
+                            <ul>
+                                <li>
+                                    Accurately modeling gravitational and
+                                    external forces.
+                                </li>
+                                <li>
+                                    Determining optimal damper coefficients for
+                                    stable oscillations.
+                                </li>
+                            </ul>
+                            <h3>Outcomes</h3>
+                            <ul>
+                                <li>
+                                    Achieved stable oscillations within the
+                                    specified constraints.
+                                </li>
+                                <li>
+                                    Demonstrated the effectiveness of
+                                    OpenModelica for dynamic system simulations.
+                                </li>
+                            </ul>
+                            <h3>Technologies Used</h3>
+                            <p>
+                                OpenModelica, Modelica Mechanics Library,
+                                Dynamic System Simulation.
+                            </p>
+                            <blockquote>
+                                "The simulation demonstrated stable
+                                oscillations, validating the effectiveness of
+                                OpenModelica for dynamic system analysis."
+                            </blockquote>
+                            <p>
+                                <a
+                                    href="https://github.com/tomjpalamattam/Projects/tree/main/Mechatronic-System-Simulation"
+                                    target="_blank"
+                                    class="btn btn-primary"
+                                    >View on GitHub</a
+                                >
+                            </p>
                         </section>
                     </article>
                 </div>
@@ -300,8 +1956,8 @@
                         <h3 class="widget-title">Contact</h3>
                         <div class="widget-body">
                             <p>
-                                +123 456 7890<br />
-                                <a href="mailto:#">engineer@example.com</a
+                                <a href="mailto:#"
+                                    >tomjojopalamattam@gmail.com</a
                                 ><br />
                                 <br />
                                 Regensburg, Germany
@@ -313,15 +1969,12 @@
                         <h3 class="widget-title">Follow Me</h3>
                         <div class="widget-body">
                             <p class="follow-me-icons">
-                                <a href=""
-                                    ><i class="fa fa-twitter fa-2"></i
-                                ></a>
-                                <a href=""
+                                <a
+                                    href="https://www.linkedin.com/in/tom-jojo-palamattam-b45a5112b/"
                                     ><i class="fa fa-linkedin fa-2"></i
                                 ></a>
-                                <a href=""><i class="fa fa-github fa-2"></i></a>
-                                <a href=""
-                                    ><i class="fa fa-facebook fa-2"></i
+                                <a href="https://github.com/tomjpalamattam"
+                                    ><i class="fa fa-github fa-2"></i
                                 ></a>
                             </p>
                         </div>
@@ -331,7 +1984,7 @@
                         <h3 class="widget-title">About Me</h3>
                         <div class="widget-body">
                             <p>
-                                I am an AI Mechatronic Engineer specializing in
+                                I am a Mechatronic Engineer specializing in
                                 integrating AI and machine learning into
                                 mechanical and electrical systems. My expertise
                                 spans from developing AI-driven solutions to
@@ -361,14 +2014,13 @@
                 <div class="row">
                     <div class="col-md-6 widget">
                         <div class="widget-body">
-                            <p>Deggendorf Institute of Technology, Germany</p>
+                            <p>Regensburg, Germany</p>
                         </div>
                     </div>
                     <div class="col-md-6 widget">
                         <div class="widget-body">
                             <p class="text-right">
-                                Copyright &copy; 2023, AI Mechatronic
-                                Engineer<br />
+                                Copyright &copy; 2025 <br />
                                 Design:
                                 <a
                                     href="http://www.gettemplate.com"
@@ -386,6 +2038,7 @@
         <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
         <script src="assets/js/template.js"></script>
     </body>
 </html>
