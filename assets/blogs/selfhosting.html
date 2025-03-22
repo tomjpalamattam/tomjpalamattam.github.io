@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Building My Enterprise-Grade Homelab: A Journey Through Linux,
+            Containers, and Secure Networking
+        </title>
+        <style>
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.8;
+                margin: 40px auto;
+                max-width: 800px;
+                color: #333;
+            }
+            h1,
+            h2,
+            h3 {
+                color: #2c3e50;
+                margin-top: 1.5em;
+            }
+            code {
+                background: #f8f9fa;
+                padding: 2px 6px;
+                border-radius: 4px;
+                font-family: "Fira Code", monospace;
+            }
+            pre {
+                background: #f8f9fa;
+                padding: 15px;
+                border-radius: 8px;
+                overflow-x: auto;
+                border-left: 4px solid #3498db;
+            }
+            .callout {
+                background: #e8f4fd;
+                border-left: 4px solid #3498db;
+                padding: 1.5em;
+                margin: 2em 0;
+            }
+            a {
+                color: #3498db;
+                text-decoration: none;
+            }
+            .command {
+                color: #27ae60;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Building My Enterprise-Grade Homelab</h1>
+        <p>
+            <em
+                >How Arch Linux, Docker, QEMU/KVM and Tailscale helped me create
+                a professional development environment that rivals commercial
+                solutions</em
+            >
+        </p>
+
+        <h2>Why Build a Homelab In A Virtual Machine?</h2>
+        <p>
+            Faced with the challenge of creating an enterprise-grade environment
+            on consumer hardware, I opted for a QEMU-based virtual machine
+            setup. This approach allowed me to:
+        </p>
+        <ul>
+            <li>Isolate services while maintaining hardware efficiency</li>
+            <li>Mirror production environments I work with professionally</li>
+            <li>Experiment with container orchestration</li>
+            <li>Implement enterprise security patterns and Firewalls(UFW)</li>
+            <li>Host personal projects with production-grade reliability</li>
+        </ul>
+
+        <h2>Choosing the Foundation: Arch Linux</h2>
+        <p>
+            The decision to use Arch Linux wasn't about being trendy - it forced
+            me to deeply understand Linux fundamentals. Here's what my
+            installation process taught me:
+        </p>
+
+        <div class="image-container">
+            <img
+                src="images/QEMU.png"
+                alt="Arch Linux Running in QEMU/KVM"
+                class="architecture-diagram"
+                style="width: 1000px; height: auto"
+            />
+            <p class="caption">Figure 1: Arch Linux Running in QEMU/KVM</p>
+        </div>
+
+        <h3>Why Arch Linux?</h3>
+        <p>My choice of Arch Linux was driven by three key requirements:</p>
+        <ul>
+            <li>Minimal base installation (under 250MB RAM usage)</li>
+            <li>Custom installation with only necessary components</li>
+            <li>Rolling updates for security and hardware support</li>
+        </ul>
+        <div class="callout">
+            <h3>Key Implementation Details</h3>
+            <ul>
+                <li>Btrfs snapshots for easy rollbacks</li>
+                <li>Full-disk encryption with LUKS2</li>
+                <li>Secure boot implementation using sbctl</li>
+                <li>Booster Initramfs for Faster boot times</li>
+            </ul>
+        </div>
+
+        <pre><code class="command">
+# My partition structure after installation
+NAME                TYPE        MOUNTPOINT
+vda1                vfat        /boot/EFI
+vda2                crypto_LUKS
+└─cryptlvm          LVM2_member
+  ├─volgroup0-root  btrfs       /
+  └─volgroup0-home  btrfs       /home
+        </code></pre>
+
+        <h2>The Networking Backbone: Tailscale and Secure Access</h2>
+        <p>
+            Instead of exposing ports directly, I implemented a zero-trust
+            network using Tailscale. This enterprise-grade solution gave me:
+        </p>
+        <ul>
+            <li>Automatic WireGuard-based VPN</li>
+            <li>SSO integration capabilities</li>
+            <li>Fine-grained access controls</li>
+        </ul>
+
+        <p>For services needing local access, I use SSH tunneling:</p>
+        <pre><code class="command">
+# Secure port forwarding example
+ssh vm -L 8888:localhost:8888 -fN
+        </code></pre>
+        <p>
+            This creates a secure tunnel for accessing dockers or other web
+            services without exposing ports publicly.
+        </p>
+
+        <h2>Containerizing Everything: Docker as the Runtime</h2>
+        <p>
+            My Docker philosophy: "If it can be containerized, it should be."
+            Here's my stack:
+        </p>
+
+        <h3>1. Caddy Reverse Proxy</h3>
+        <p>Custom-built with layer 4 support for non-HTTP services:</p>
+        <pre><code>
+FROM caddy:2.9.1-builder-alpine AS builder
+RUN xcaddy build --with github.com/mholt/caddy-l4@87e3e5e2c7f986b34c0df373a5799670d7b8ca03
+        </code></pre>
+        <p>
+            This allows me to proxy database connections and other TCP/UDP
+            services securely.
+        </p>
+
+        <h3>2. Nextcloud AIO</h3>
+
+        <div class="image-container">
+            <img
+                src="images/nextcloud.png"
+                alt="Nextcloud dashboard interface"
+                class="architecture-diagram"
+                style="width: 1000px; height: auto"
+            />
+            <p class="caption">
+                Figure 2: Nextcloud deployment with Tailscale integration
+            </p>
+        </div>
+        <p>My self-hosted productivity suite handles:</p>
+        <ul>
+            <li>File storage with end-to-end encryption</li>
+            <li>Collabora Office integration</li>
+            <li>Secure video conferencing</li>
+        </ul>
+
+        <div class="callout">
+            <h3>Why Tailscale Integration Matters</h3>
+            <pre><code>
+services:
+  nextcloud-aio-tailscale:
+    image: tailscale/tailscale:v1.80.0
+    environment:
+      TS_HOSTNAME: nextcloud
+      TS_AUTH_KEY: ${TS_KEY}
+    cap_add:
+      - NET_ADMIN
+            </code></pre>
+            <p>
+                This configuration allows secure remote access without worrying
+                about exposing ports to the internet or public IPs.
+            </p>
+        </div>
+
+        <h3>3. Immich Photo Management</h3>
+        <div class="image-container">
+            <img
+                src="images/immich.png"
+                alt="Immich In Docker"
+                class="architecture-diagram"
+                style="width: 1000px; height: auto"
+            />
+            <p class="caption">Figure 3: Immich Photos</p>
+        </div>
+        <p>My Google Photos alternative features:</p>
+        <ul>
+            <li>ML-powered face recognition</li>
+            <li>EXIF-preserving backups</li>
+            <li>Cross-device sync</li>
+        </ul>
+        <pre><code>
+services:
+  immich-server:
+    image: ghcr.io/immich-app/immich-server:release
+    environment:
+      DB_HOSTNAME: database
+      REDIS_HOSTNAME: redis
+        </code></pre>
+
+        <h2>Security as a First Principle</h2>
+        <p>Every layer incorporates security best practices:</p>
+        <ol>
+            <li><strong>Disk:</strong> LUKS2 encryption with Argon2id KDF</li>
+            <li><strong>Boot:</strong> Custom secure boot keys</li>
+            <li>
+                <strong>Network:</strong> Tailscale with MFA enforcement and UFW
+                firewall
+            </li>
+            <li>
+                <strong>Containers:</strong> Read-only root filesystems where
+                possible
+            </li>
+        </ol>
+
+        <h2>The Developer Experience</h2>
+        <p>This setup isn't just secure - it's productive:</p>
+        <ul>
+            <li>Automatic TLS via Caddy</li>
+            <li>GitOps-style configuration management</li>
+            <li>Snapshot-based rollbacks with Btrfs</li>
+            <li>SSH with public key access</li>
+        </ul>
+
+        <h2>Lessons Learned</h2>
+        <p>
+            Building this environment taught me valuable professional lessons:
+        </p>
+        <ol>
+            <li>The importance of immutable infrastructure patterns</li>
+            <li>How zero-trust networking actually works in practice</li>
+            <li>Cost/benefit analysis of self-hosted vs managed services</li>
+        </ol>
+
+        <h2>Looking Ahead</h2>
+        <p>My current roadmap includes:</p>
+        <ul>
+            <li>Implementing Kubernetes for orchestration</li>
+            <li>Adding OpenTelemetry instrumentation</li>
+            <li>Experiment with SPIFFE/SPIRE for identity management</li>
+        </ul>
+
+        <div class="callout">
+            <h3>Skills Demonstrated</h3>
+            <ul>
+                <li>Linux system administration</li>
+                <li>Infrastructure as Code (Docker Compose)</li>
+                <li>Network security implementation</li>
+                <li>CI/CD pipeline design</li>
+            </ul>
+        </div>
+
+        <p>
+            This homelab journey has been instrumental in developing my
+            infrastructure engineering skills. It's not just about running
+            services - it's about understanding how enterprise systems truly
+            work under the hood.
+        </p>
+    </body>
+</html>
