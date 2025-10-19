@@ -293,8 +293,142 @@
                                 >
                             </p>
                         </section>
+                        <!-- Project 2: RAG-Qt Application -->
+                        <section id="rag-qt">
+                            <h2>Retrieval-Augmented Generation (RAG) Desktop Application with Qt</h2>
+                            <p>
+                                <a
+                                    href="assets/images/qt.png"
+                                    data-lightbox="ragqt"
+                                    data-title="RAG-Qt Application"
+                                >
+                                    <img
+                                        src="assets/images/qt.png"
+                                        alt="RAG-Qt Application"
+                                        class="img-responsive"
+                                    />
+                                </a>
+                            </p>
+                            <p>
+                                This project integrates a <strong>Qt-based desktop interface</strong> with a 
+                                <strong>FastAPI backend</strong> implementing a Retrieval-Augmented Generation (RAG) pipeline 
+                                for intelligent document querying. It enables users to embed local PDF documents into a 
+                                <strong>Qdrant vector database</strong> and perform context-aware question-answering through 
+                                a seamless graphical interface. The backend leverages <strong>LangChain</strong>, 
+                                <strong>DeepSeek</strong>, and <strong>HuggingFace embeddings</strong> to deliver 
+                                accurate, explainable, and memory-persistent responses.
+                            </p>
 
-                        <!-- Project 2: Retrieval-Augmented Generation (RAG) -->
+                            <h3>Key Features and Contributions</h3>
+                            <ul>
+                                <li>Developed a <strong>cross-platform Qt GUI</strong> for local document embedding and RAG querying.</li>
+                                <li>Implemented <strong>FastAPI endpoints</strong> for document indexing (<code>/embed</code>) and querying (<code>/query</code>).</li>
+                                <li>Integrated <strong>LangChain</strong> with <strong>DeepSeek LLM</strong> and <strong>Qdrant</strong> for vector-based retrieval.</li>
+                                <li>Utilized <strong>HuggingFace Qwen3-Embedding-8B</strong> for high-quality semantic representation.</li>
+                                <li>Enabled <strong>session-aware chat memory</strong> using LangChain’s <code>RunnableWithMessageHistory</code>.</li>
+                                <li>Formatted and rendered LLM responses in <strong>Markdown</strong> for rich display within the Qt interface.</li>
+                                <li>Handled network operations asynchronously with robust error handling in <strong>C++ (QNetworkAccessManager)</strong>.</li>
+                            </ul>
+
+                            <h3>Architecture Overview</h3>
+                            <ul>
+                                <li><strong>Frontend:</strong> Qt (C++) with interactive GUI and API communication via <code>QNetworkAccessManager</code>.</li>
+                                <li><strong>Backend:</strong> FastAPI + LangChain for RAG pipeline orchestration.</li>
+                                <li><strong>Database:</strong> Local <code>Qdrant</code> vector store for embedded document retrieval.</li>
+                                <li><strong>Model:</strong> DeepSeek Chat + HuggingFace Qwen embeddings for retrieval and reasoning.</li>
+                            </ul>
+
+                            <h3>Challenges</h3>
+                            <ul>
+                                <li>Synchronizing asynchronous HTTP communication between Qt and FastAPI.</li>
+                                <li>Managing memory persistence across multiple RAG sessions.</li>
+                                <li>Ensuring stable performance during document embedding and retrieval on local hardware.</li>
+                                <li>Maintaining UI responsiveness during long-running inference tasks.</li>
+                            </ul>
+
+                            <h3>Outcomes</h3>
+                            <ul>
+                                <li>Delivered a fully functional <strong>desktop RAG system</strong> for intelligent document querying.</li>
+                                <li>Achieved <strong>real-time retrieval and response generation</strong> from locally indexed documents.</li>
+                                <li>Demonstrated <strong>practical integration of LLMs into C++ desktop environments</strong> through API communication.</li>
+                                <li>Established a robust framework for extending RAG workflows into native applications.</li>
+                            </ul>
+
+                            <h3>Technologies Used</h3>
+                            <p>
+                                Qt (C++), FastAPI, Python, LangChain, DeepSeek, HuggingFace Qwen3-Embedding-8B, 
+                                Qdrant, MarkdownIt, PyMuPDF, TensorFlow, Uvicorn, JSON.
+                            </p>
+
+                            <blockquote>
+                                "Built a cross-platform RAG desktop application that connects a Qt GUI with a FastAPI backend, 
+                                combining DeepSeek, LangChain, and Qdrant to deliver interactive, explainable, and context-aware document querying."
+                            </blockquote>
+
+                            <p>
+                                <a
+                                    href="https://github.com/tomjpalamattam/RAG-QT"
+                                    target="_blank"
+                                    class="btn btn-primary"
+                                    >View on GitHub</a
+                                >
+                            </p>
+                        </section>
+                        <!-- Project-3: LoRA-Enhanced Transformer -->
+                        <section id="lora-gpt">
+                            <h2>LoRA Fine-Tuned Transformer</h2>
+                            <p>
+                                <a
+                                    href="assets/images/slm.png
+                                    data-lightbox="lora-gpt"
+                                    data-title="LoRA-Enhanced Transformer (RAG-QT)"
+                                >
+                                    <img
+                                        src="assets/images/slm.png"
+                                        alt="LoRA Transformer Project"
+                                        class="img-responsive"
+                                    />
+                                </a>
+                            </p>
+                            <p>
+                                This project involved developing a modular <strong>Transformer-based language model</strong> from scratch in PyTorch,
+                                inspired by <strong>nanoGPT</strong>, with added <strong>LoRA (Low-Rank Adaptation)</strong> for parameter-efficient fine-tuning.
+                                The model was trained on the <strong>TinyStories dataset</strong> using <strong>mixed-precision training</strong> and advanced
+                                learning rate scheduling for efficient convergence. Multiple Python modules were created for dataset preparation,
+                                model architecture, LoRA integration, and training management. Visualization tools like <strong>torchviz</strong> and
+                                <strong>matplotlib</strong> were used to analyze model structure and learning behavior.
+                            </p>
+
+                            <h3>Key Contributions</h3>
+                            <ul>
+                                <li>Implemented a complete <strong>Transformer GPT architecture</strong> with multi-head attention, positional encoding, and feed-forward layers.</li>
+                                <li>Integrated <strong>LoRA fine-tuning</strong>, reducing trainable parameters from 49M to ~55K for efficient adaptation.</li>
+                                <li>Optimized training with <strong>mixed-precision (AMP)</strong>, gradient clipping, and cosine annealing learning rate schedules.</li>
+                                <li>Developed robust <strong>data preprocessing pipelines</strong> using <code>datasets</code> and <code>tiktoken</code> for tokenization and batching.</li>
+                                <li>Generated coherent text outputs and visualized computation graphs using <strong>torchviz</strong> and <strong>matplotlib</strong>.</li>
+                            </ul>
+
+                            <h3>Technologies Used</h3>
+                            <p>Python, PyTorch, LoRA, Hugging Face Datasets, tiktoken, Matplotlib, TorchViz, CUDA, NumPy.</p>
+
+                            <blockquote>
+                                "Built a LoRA-enhanced GPT-style Transformer trained on TinyStories with efficient fine-tuning, achieving 
+                                high-quality text generation while reducing trainable parameters by over 99%."
+                            </blockquote>
+
+                            <p>
+                                <a
+                                    href="https://github.com/tomjpalamattam/slm-finetune/blob/master/Notebook/SLM.ipynb"
+                                    target="_blank"
+                                    class="btn btn-primary"
+                                >
+                                    View on GitHub
+                                </a>
+                            </p>
+                        </section>
+
+                        
+                        <!-- Project 4: Retrieval-Augmented Generation (RAG) -->
                         <section id="rag">
                             <h2>Retrieval-Augmented Generation (RAG)</h2>
                             <p>
@@ -766,7 +900,7 @@
                             </p>
                         </section>
 
-                        <!-- Project 4: Character-Level Language Model Using Transformer Architecture -->
+                        <!-- Project 6: Character-Level Language Model Using Transformer Architecture -->
                         <section id="transformer-language-model">
                             <h2>
                                 Character-Level Language Model Using Transformer
@@ -991,7 +1125,7 @@
                                 >
                             </p>
                         </section>
-                        <!-- Project 5: Watermark Removal Using Generative Adversarial Networks -->
+                        <!-- Project 7: Watermark Removal Using Generative Adversarial Networks -->
                         <section id="watermark-removal">
                             <h2>
                                 Watermark Removal Using Generative Adversarial
@@ -1198,7 +1332,7 @@
                                 >
                             </p>
                         </section>
-                        <!-- Project 6: Image Segmentation based on UNet -->
+                        <!-- Project 8: Image Segmentation based on UNet -->
                         <section id="unet-image-segmentation">
                             <h2>Image Segmentation based on UNet</h2>
                             <p>
@@ -1410,7 +1544,7 @@
                             </p>
                         </section>
 
-                        <!-- Project 7: LSTM-Based Stock Price Prediction -->
+                        <!-- Project 9: LSTM-Based Stock Price Prediction -->
                         <section id="lstm-stock-prediction">
                             <h2>LSTM-Based Stock Price Prediction</h2>
                             <p>
@@ -1614,7 +1748,7 @@
                             </p>
                         </section>
 
-                        <!-- Project 8: Temperature Control System (CPS) -->
+                        <!-- Project 10: Temperature Control System (CPS) -->
                         <section id="temperature-control">
                             <h2>Temperature Control System (CPS)</h2>
                             <p>
@@ -1698,7 +1832,7 @@
                             </p>
                         </section>
 
-                        <!-- Project 9: PID-Controlled Buck Converter -->
+                        <!-- Project 11: PID-Controlled Buck Converter -->
                         <section id="buck-converter">
                             <h2>PID-Controlled Buck Converter</h2>
                             <p>
@@ -1780,7 +1914,7 @@
                             </p>
                         </section>
 
-                        <!-- Project 10: RC Low-Pass Filter Simulation -->
+                        <!-- Project 12: RC Low-Pass Filter Simulation -->
                         <section id="rc-filter">
                             <h2>RC Low-Pass Filter Simulation</h2>
                             <p>
@@ -1864,7 +1998,7 @@
                             </p>
                         </section>
 
-                        <!-- Project 11: Two-Mass Oscillator Simulation -->
+                        <!-- Project 13: Two-Mass Oscillator Simulation -->
                         <section id="two-mass-oscillator">
                             <h2>Two-Mass Oscillator Simulation</h2>
                             <p>
