@@ -314,7 +314,7 @@
                             <p>
                                 This project implements a <strong>Retrieval-Augmented Generation (RAG)</strong> workflow
                                 through a <strong>Qt-based desktop interface</strong> connected to a 
-                                <strong>FastAPI backend</strong>. It enables users to embed local PDF documents into a
+                                <strong>Dockerized FastAPI backend</strong>. It enables users to embed local PDF documents into a
                                 <strong>Qdrant vector database</strong> and perform intelligent, context-aware queries.
                                 The backend integrates <strong>LangChain</strong>, <strong>DeepSeek LLM</strong>, and 
                                 <strong>HuggingFace Qwen3-Embedding-8B</strong> to deliver fast, explainable, and
@@ -329,6 +329,7 @@
                                 <li>Integrated <strong>LangChain</strong> with <strong>DeepSeek Chat</strong> and <strong>Qdrant</strong> for semantic retrieval.</li>
                                 <li>Used <strong>HuggingFace Qwen3-Embedding-8B</strong> for high-quality contextual embeddings.</li>
                                 <li>Enabled <strong>persistent, session-aware chat memory</strong> backed by <strong>SQLite</strong> through <code>SQLChatMessageHistory</code>.</li>
+                                <li>Containerized the entire <strong>FastAPI backend</strong> using <strong>Docker</strong> for consistent, portable deployment.</li>
                                 <li>Formatted and rendered model responses in <strong>Markdown</strong> using <strong>MarkdownIt</strong> for enhanced readability in the Qt interface.</li>
                                 <li>Performed asynchronous network operations and error handling using <strong>QNetworkAccessManager</strong> in C++.</li>
                                 <li>Implemented backend-side chat history formatting for simplified frontend integration.</li>
@@ -337,7 +338,7 @@
                             <h3>Architecture Overview</h3>
                             <ul>
                                 <li><strong>Frontend:</strong> Qt (C++) desktop GUI with asynchronous API communication via <code>QNetworkAccessManager</code>.</li>
-                                <li><strong>Backend:</strong> FastAPI + LangChain for RAG orchestration and conversational logic.</li>
+                                <li><strong>Backend:</strong> Dockerized FastAPI + LangChain for RAG orchestration and conversational logic.</li>
                                 <li><strong>Vector Database:</strong> <code>Qdrant</code> for efficient document embedding and retrieval.</li>
                                 <li><strong>Relational Database:</strong> <code>SQLite</code> for durable storage of chat history and session metadata.</li>
                                 <li><strong>Models:</strong> DeepSeek Chat LLM + HuggingFace Qwen3-Embedding-8B for context reasoning and embedding generation.</li>
@@ -349,6 +350,7 @@
                                 <li>Managing multi-session chat memory persistence using SQLite as the relational backend.</li>
                                 <li>Maintaining consistent UI responsiveness during model inference and database operations.</li>
                                 <li>Optimizing local embedding performance and retrieval accuracy.</li>
+                                <li>Containerizing backend services and managing dependencies across environments with Docker.</li>
                             </ul>
 
                             <h3>Outcomes</h3>
@@ -356,18 +358,18 @@
                                 <li>Delivered a fully functional <strong>desktop RAG system</strong> capable of real-time document-aware Q&A.</li>
                                 <li>Achieved <strong>persistent conversational continuity</strong> through SQLite-backed chat history.</li>
                                 <li>Demonstrated seamless <strong>Python–C++ integration</strong> for LLM-powered reasoning tasks.</li>
-                                <li>Established a scalable framework for extending RAG workflows into production-grade desktop environments.</li>
+                                <li>Established a scalable, containerized framework for extending RAG workflows into production-grade desktop environments.</li>
                             </ul>
 
                             <h3>Technologies Used</h3>
                             <p>
-                                Qt (C++), FastAPI, Python, LangChain, DeepSeek, HuggingFace Qwen3-Embedding-8B, 
-                                Qdrant, SQLite, MarkdownIt, PyMuPDF, TensorFlow, Uvicorn, JSON.
+                                Qt (C++), FastAPI, Python, LangChain, DeepSeek, HuggingFace Qwen3-Embedding-8B,
+                                Qdrant, SQLite, Docker, MarkdownIt, PyMuPDF, TensorFlow, Uvicorn, JSON.
                             </p>
 
                             <blockquote>
-                                “Built a cross-platform RAG desktop application combining a Qt GUI with a FastAPI backend — integrating 
-                                DeepSeek, LangChain, Qdrant, and SQLite to deliver explainable, persistent, and context-aware document querying.”
+                                “Built a cross-platform RAG desktop application combining a Qt GUI with a Dockerized FastAPI backend —
+                                integrating DeepSeek, LangChain, Qdrant, and SQLite to deliver explainable, persistent, and context-aware document querying.”
                             </blockquote>
 
                             <p>
@@ -380,6 +382,7 @@
                                 </a>
                             </p>
                         </section>
+
 
                         <!-- Project-3: LoRA-Enhanced Transformer -->
                         <section id="lora-gpt">
